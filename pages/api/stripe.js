@@ -13,6 +13,8 @@ export default async function handler(req, res) {
         shipping_options: [
           { shipping_rate: 'shr_1KttJ5Dwe01HUAKQENsAMfBP' },
           { shipping_rate: 'shr_1KttITDwe01HUAKQ3I7Dfae1' },
+          /* shipping rate for tests below           
+          { shipping_rate: 'shr_1KtvI0Dwe01HUAKQKHkSTV05' },*/
         ],
         line_items: req.body.map((item) => {
           const img = item.image[0].asset._ref;
